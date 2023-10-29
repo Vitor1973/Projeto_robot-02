@@ -1,0 +1,300 @@
+<form action="/erp/oferta/save" method="post" style="outline: green dotted 2px !important;">
+    <div class="card-body" style="">
+
+        <h5 class="mb-4">Oferta</h5>
+        <div class="row">
+            <div class="col-12 col-md-6" style="">
+                <div class="form-group" style="">
+                    <label for="matriz.id-selectized">Matriz</label>
+                    <select id="matriz.id" class="js-selectize selectized" name="matriz.id"
+                        data-url="oferta/searchMatriz" tabindex="-1" style="display: none;">
+                        <option value="" selected="selected"></option>
+                    </select>
+                    <div class="selectize-control js-selectize single">
+                        <div class="selectize-input items required invalid not-full"><input type="text"
+                                autocomplete="off" tabindex="" id="matriz.id-selectized" placeholder="Matriz"
+                                required="" style="width: 40.2396px;"></div>
+                        <div class="selectize-dropdown single js-selectize"
+                            style="display: none; width: 589.667px; top: 35.7188px; left: 0px;">
+                            <div class="selectize-dropdown-content"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-2">
+                <div class="form-group">
+                    <label for="tipoOferta-selectized" class="required">Tipo Oferta</label>
+                    <select id="tipoOferta" class="js-selectize selectized" name="tipoOferta" tabindex="-1"
+                        style="display: none;">
+                        <option value="" selected="selected"></option>
+                    </select>
+                    <div class="selectize-control js-selectize single">
+                        <div class="selectize-input items required invalid not-full has-options"><input type="text"
+                                autocomplete="off" tabindex="" id="tipoOferta-selectized" placeholder="Tipo Oferta"
+                                required="" style="width: 68.9896px;"></div>
+                        <div class="selectize-dropdown single js-selectize"
+                            style="display: none; width: 176.552px; top: 35.7188px; left: 0px;">
+                            <div class="selectize-dropdown-content"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-2">
+                <div class="form-group">
+                    <label for="marca-selectized" class="required">Marca</label>
+                    <select id="marca" class="js-selectize selectized" name="marca.id" tabindex="-1"
+                        style="display: none;">
+                        <option value="" selected="selected"></option>
+                    </select>
+                    <div class="selectize-control js-selectize single">
+                        <div class="selectize-input items required invalid not-full has-options"><input type="text"
+                                autocomplete="off" tabindex="" id="marca-selectized" placeholder="Marca" required=""
+                                style="width: 39.4271px;"></div>
+                        <div class="selectize-dropdown single js-selectize"
+                            style="display: none; width: 176.552px; top: 35.7188px; left: 0px;">
+                            <div class="selectize-dropdown-content"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-2">
+                <div class="form-group">
+                    <label for="marcaCertificacao-selectized">Marca Certificação</label>
+                    <select id="marcaCertificacao" class="js-selectize selectized" name="marcaCertificacao.id"
+                        tabindex="-1" style="display: none;">
+                        <option value="" selected="selected"></option>
+                    </select>
+                    <div class="selectize-control js-selectize single">
+                        <div class="selectize-input items not-full has-options"><input type="text" autocomplete="off"
+                                tabindex="" id="marcaCertificacao-selectized" placeholder="Marca Certificação"
+                                style="width: 109.99px;"></div>
+                        <div class="selectize-dropdown single js-selectize"
+                            style="display: none; width: 176.552px; top: 35.7188px; left: 0px;">
+                            <div class="selectize-dropdown-content"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-2">
+                <div class="form-group">
+                    <label for="turno-selectized">Turno</label>
+                    <select name="turno" id="turno" class="js-selectize selectized" tabindex="-1"
+                        style="display: none;">
+                        <option value="" selected="selected"></option>
+                    </select>
+                    <div class="selectize-control js-selectize single">
+                        <div class="selectize-input items not-full has-options"><input type="text" autocomplete="off"
+                                tabindex="" id="turno-selectized" placeholder="Turno" style="width: 37.6667px;"></div>
+                        <div class="selectize-dropdown single js-selectize"
+                            style="display: none; width: 176.552px; top: 35.7188px; left: 0px;">
+                            <div class="selectize-dropdown-content"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="form-group">
+                    <label for="tipoConceito-selectized" class="required">Tipo Conceito</label>
+                    <select name="tipoConceito.id" id="tipoConceito" class="js-selectize selectized" tabindex="-1"
+                        style="display: none;">
+                        <option value="" selected="selected"></option>
+                    </select>
+                    <div class="selectize-control js-selectize single">
+                        <div class="selectize-input items required invalid not-full has-options"><input type="text"
+                                autocomplete="off" tabindex="" id="tipoConceito-selectized" placeholder="Tipo Conceito"
+                                required="" style="width: 83.7812px;"></div>
+                        <div class="selectize-dropdown single js-selectize"
+                            style="display: none; width: 383.104px; top: 35.7188px; left: 0px;">
+                            <div class="selectize-dropdown-content"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-2">
+                <div class="form-group">
+                    <label for="contratoNumero">Contrato Número</label>
+                    <input type="text" class="form-control" id="contratoNumero" name="contratoNumero" value=""
+                        maxlength="20">
+                </div>
+            </div>
+            <div class="col-12 col-md-2">
+                <div class="form-group">
+                    <label for="contratoData">Contrato Data</label>
+                    <input type="text" class="form-control js-mask-date" placeholder="DD/MM/AAAA" id="contratoData"
+                        name="contratoData" value="">
+                </div>
+            </div>
+            <div class="col-12 col-md-2">
+                <div class="form-group">
+                    <label for="cancelado-selectized" class="required">Cancelado</label>
+                    <select name="cancelado" id="cancelado" class="js-selectize selectized" required="" tabindex="-1"
+                        style="display: none;">
+                        <option value="false" selected="selected">Não</option>
+                    </select>
+                    <div class="selectize-control js-selectize single">
+                        <div class="selectize-input items required full has-options has-items">
+                            <div class="item" data-value="false">Não</div><input type="text" autocomplete="off"
+                                tabindex="" id="cancelado-selectized" style="width: 4px;">
+                        </div>
+                        <div class="selectize-dropdown single js-selectize"
+                            style="display: none; width: 176.552px; top: 35.7188px; left: 0px;">
+                            <div class="selectize-dropdown-content"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-2" style="">
+                <div class="form-group">
+                    <label for="dataInicio">Data inicial</label>
+                    <input type="text" class="form-control js-mask-date" placeholder="DD/MM/AAAA" id="dataInicio"
+                        name="dataInicio" value="">
+                </div>
+            </div>
+            <div class="col-12 col-md-2" style="">
+                <div class="form-group">
+                    <label for="dataFim">Data final</label>
+                    <input type="text" class="form-control js-mask-date" placeholder="DD/MM/AAAA" id="dataFim"
+                        name="dataFim" value="">
+                </div>
+            </div>
+            <div class="col-12 col-md-2" style="">
+                <div class="form-group">
+                    <label for="confInicio">Início</label>
+                    <input type="text" class="form-control" pattern="(\d)+"
+                        title="Padrão Errado de Configuração(Ex: 0, 365)" id="confInicio" name="confInicio" value=""
+                        }="" style="">
+                </div>
+            </div>
+            <div class="col-12 col-md-2" style="">
+                <div class="form-group">
+                    <label for="confFim">Fim</label>
+                    <input type="text" class="form-control" pattern="(\d)+"
+                        title="Padrão Errado de Configuração(Ex: 0, 365)" id="confFim" name="confFim" value="" }=""
+                        style="">
+                </div>
+            </div>
+            <div class="col-12 col-md-2">
+                <div class="form-group">
+                    <label for="matriculasMaximoTutoria">Alunos por Tutoria</label>
+                    <input type="number" max="1000" class="form-control" id="matriculasMaximoTutoria"
+                        name="matriculasMaximoTutoria" value="1000">
+                </div>
+            </div>
+            <div class="col-12 col-md-2">
+                <div class="form-group">
+                    <label for="possuiAvaliacaoPresencial-selectized" class="required">Possui Avaliação
+                        Presencial</label>
+                    <select name="possuiAvaliacaoPresencial" id="possuiAvaliacaoPresencial"
+                        class="js-selectize selectized" required="" tabindex="-1" style="display: none;">
+                        <option value="false" selected="selected">Não</option>
+                    </select>
+                    <div class="selectize-control js-selectize single">
+                        <div class="selectize-input items required full has-options has-items">
+                            <div class="item" data-value="false">Não</div><input type="text" autocomplete="off"
+                                tabindex="" id="possuiAvaliacaoPresencial-selectized" style="width: 4px;">
+                        </div>
+                        <div class="selectize-dropdown single js-selectize"
+                            style="display: none; width: 176.552px; top: 35.7188px; left: 0px;">
+                            <div class="selectize-dropdown-content"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="">
+            <div class="col-12 col-md-6">
+                <div class="form-group">
+                    <label for="credenciamentoModalidade">Credenciamento Modalidade</label>
+                    <input type="text" class="form-control" id="credenciamentoModalidade"
+                        name="credenciamentoModalidade" value="">
+                </div>
+            </div>
+            <div class="col-12 col-md-2">
+                <div class="form-group">
+                    <label for="possuiAvaliacaoPresencial-selectized" class="required">Degustação</label>
+                    <select name="degustacao" id="degustacao" class="js-selectize selectized" tabindex="-1"
+                        style="display: none;" required="">
+                        <option value="true" selected="selected">Sim</option>
+                    </select>
+                    <div class="selectize-control js-selectize single">
+                        <div class="selectize-input items required has-options full has-items">
+                            <div class="item" data-value="true">Sim</div><input type="text" autocomplete="off"
+                                tabindex="" id="degustacao-selectized"
+                                style="opacity: 0; position: absolute; left: -10000px; width: 4px;">
+                        </div>
+                        <div class="selectize-dropdown single js-selectize"
+                            style="display: none; width: 176.552px; top: 35.7188px; left: 0px; visibility: visible;">
+                            <div class="selectize-dropdown-content">
+                                <div class="option selected active" data-selectable="" data-value="true">Sim</div>
+                                <div class="option" data-selectable="" data-value="false">Não</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-2">
+                <div class="form-group">
+                    <label for="portalPos-selectized" class="required">Portal Pós</label>
+                    <select name="portalPos" id="portalPos" class="js-selectize selectized" tabindex="-1"
+                        style="display: none;" required="">
+                        <option value="true" selected="selected">Sim</option>
+                    </select>
+                    <div class="selectize-control js-selectize single">
+                        <div class="selectize-input items required has-options full has-items">
+                            <div class="item" data-value="true">Sim</div><input type="text" autocomplete="off"
+                                tabindex="" id="portalPos-selectized"
+                                style="opacity: 0; position: absolute; left: -10000px;">
+                        </div>
+                        <div class="selectize-dropdown single js-selectize"
+                            style="display: none; width: 176.552px; top: 57.3125px; left: 0px; visibility: visible;">
+                            <div class="selectize-dropdown-content">
+                                <div class="option selected active" data-selectable="" data-value="true">Sim</div>
+                                <div class="option" data-selectable="" data-value="false">Não</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-2">
+                <div class="form-group">
+                    <label for="codigoCursoEmec">Código E-MEC</label>
+                    <input type="text" class="form-control js-somente-numeros" id="codigoCursoEmec"
+                        name="codigoCursoEmec" value="" maxlength="10">
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h5 class="mb-4">Alavanca Fiscal</h5>
+        <div class="row" style="">
+            <div class="col-12 col-md-4">
+                <div class="form-group" style="">
+                    <label for="alavancaProduto" class="required">% Produto</label>
+                    <input required="" type="text" class="form-control" id="alavancaProduto" name="alavancaProduto"
+                        value="">
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="form-group">
+                    <label for="alavancaServico" class="required">% Serviço</label>
+                    <input required="" type="text" class="form-control" id="alavancaServico" name="alavancaServico"
+                        value="">
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="form-group">
+                    <label for="alavancaDataInicio" class="required">Data Inicial</label>
+                    <input required="" type="text" class="form-control js-mask-date" placeholder="DD/MM/AAAA"
+                        id="alavancaDataInicio" name="alavancaDataInicio" value="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-footer bg-faded" style="">
+        <button class="btn btn-primary" type="submit">Salvar</button>
+    </div>
+</form>

@@ -1,0 +1,14 @@
+1697727660087	geckodriver	INFO	Listening on 127.0.0.1:55918
+1697727663164	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55919" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\devec\\AppData\\Local\\Temp\\rust_mozprofileiSKA3d"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1697727663568	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1697727663571	Marionette	INFO	Listening on port 55932
+Read port: 55932
+WebDriver BiDi listening on ws://127.0.0.1:55919
+1697727663673	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:55919/devtools/browser/38b14ef3-a1bc-4e50-9992-e326e0f90299
+1697727685209	Marionette	INFO	Stopped listening on port 55932
+Dynamically enable window occlusion 1
+[Parent 6148, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:787

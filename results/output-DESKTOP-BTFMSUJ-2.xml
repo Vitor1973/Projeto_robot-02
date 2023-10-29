@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230820 23:47:30.232" rpa="false" schemaversion="4">
+<suite id="s1" name="Login Senha Lms" source="C:\Users\devec\OneDrive\Área de Trabalho\Robot Cosmos\login_senha_lms.robot">
+<test id="s1-t1" name="Cenario 01: Fazer login Cosmos" line="59">
+<kw name="Dado que acesso a pagina do Cosmos">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230820 23:47:30.532" level="INFO">Opening browser 'headlesschrome' to base url 'https://kroton.platosedu.io/lms/login/auth'.</msg>
+<status status="PASS" starttime="20230820 23:47:30.532" endtime="20230820 23:47:36.167"/>
+</kw>
+<status status="PASS" starttime="20230820 23:47:30.532" endtime="20230820 23:47:36.168"/>
+</kw>
+<kw name="E preencho senha e login">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${INPUT_USUARIO}</arg>
+<arg>${USUARIO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230820 23:47:36.169" level="INFO">Typing text 'tamires.medeiros' into text field '//input[@type='text']'.</msg>
+<status status="PASS" starttime="20230820 23:47:36.168" endtime="20230820 23:47:36.250"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${INPUT_SENHA}</arg>
+<arg>${SENHA}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230820 23:47:36.251" level="INFO">Typing text '123456' into text field '//input[@type='password']'.</msg>
+<status status="PASS" starttime="20230820 23:47:36.250" endtime="20230820 23:47:36.306"/>
+</kw>
+<status status="PASS" starttime="20230820 23:47:36.168" endtime="20230820 23:47:36.306"/>
+</kw>
+<kw name="Quando clico no botao entrar">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BUTTON_CLICAR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230820 23:47:36.307" level="INFO">Clicking element '//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20230820 23:47:36.306" endtime="20230820 23:47:38.236"/>
+</kw>
+<status status="PASS" starttime="20230820 23:47:36.306" endtime="20230820 23:47:38.236"/>
+</kw>
+<kw name="Entao verifico se estou na pagina correta">
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${PROVA_INICIAL}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20230820 23:47:38.261" level="INFO">Element '//a[contains(@title,'Conta')]' is displayed.</msg>
+<status status="PASS" starttime="20230820 23:47:38.237" endtime="20230820 23:47:38.262"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230820 23:47:43.262" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230820 23:47:38.262" endtime="20230820 23:47:43.262"/>
+</kw>
+<status status="PASS" starttime="20230820 23:47:38.236" endtime="20230820 23:47:43.262"/>
+</kw>
+<tag>regressivo</tag>
+<status status="PASS" starttime="20230820 23:47:30.532" endtime="20230820 23:47:43.263"/>
+</test>
+<test id="s1-t2" name="Cenario 02: Visualizar extrato do aluno" line="66">
+<kw name="Dado que clico no botão editar perfil">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LINK_PERFIL}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230820 23:47:43.267" level="INFO">Clicking element '//a[@class='btn btn-outline-secondary btn-sm']'.</msg>
+<status status="PASS" starttime="20230820 23:47:43.267" endtime="20230820 23:47:43.330"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230820 23:47:48.331" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230820 23:47:43.330" endtime="20230820 23:47:48.331"/>
+</kw>
+<status status="PASS" starttime="20230820 23:47:43.267" endtime="20230820 23:47:48.331"/>
+</kw>
+<kw name="E clico na caixa box receber mensagens">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CLICK_CHECKBOX}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230820 23:47:48.331" level="INFO">Clicking element '//input[contains(@type,'text')]'.</msg>
+<status status="PASS" starttime="20230820 23:47:48.331" endtime="20230820 23:47:48.394"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230820 23:47:53.395" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230820 23:47:48.394" endtime="20230820 23:47:53.395"/>
+</kw>
+<status status="PASS" starttime="20230820 23:47:48.331" endtime="20230820 23:47:53.395"/>
+</kw>
+<tag>extrato do aluno</tag>
+<status status="PASS" starttime="20230820 23:47:43.266" endtime="20230820 23:47:53.396"/>
+</test>
+<status status="PASS" starttime="20230820 23:47:30.232" endtime="20230820 23:47:53.398"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">extrato do aluno</stat>
+<stat pass="1" fail="0" skip="0">regressivo</stat>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Login Senha Lms">Login Senha Lms</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
