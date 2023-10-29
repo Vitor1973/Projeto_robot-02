@@ -11,6 +11,7 @@ ${URL}         https://kroton.platosedu.io/erp/login/auth
 #${BROWSER}    headlesschrome
 ${BROWSER}     chrome
 
+
 #Variaveis do login
 ${LOGIN.USUARIO_INPUT}             //input[@type='text']
 ${LOGIN.SENHA_INPUT}               //input[@type='password']
